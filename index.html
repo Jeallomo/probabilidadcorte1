@@ -1,0 +1,363 @@
+<HTML>
+<HEAD>
+  <TITLE>Probabilidad.html</TITLE>
+  <meta NAME = "GENERATOR"          CONTENT = "IHMC CmapTools vr. 4.12 ">
+  <meta NAME = "KEYWORDS"           CONTENT = "Jesus Lozada, Mapa Conceptual, cmap, CmapTools, IHMC, Probabilidad,  ¿Cuales son los principios de la Probabilidad?,  d. Leyes de las probabilidades,  ¿Cómo construir ejemplos de espacios muestrales?,  Dado una heladería que tiene una promoción de un cono de helado sorpresa en el que puede ser de 1 sabor aleatorio, nuestro espacio muestral son los siguientes sabores: H = {vainilla, chocolate, fresa, ron pasas, arequipe} Un suceso seguro seria aquel en que toque alguno de los 5 sabores anteriores. Un suceso imposible seria que tocara el sabor mango. En el caso de sacar el helado de chocolate, el suceso contrario seria sacar cualquiera de los otros 4 sabores Ejemplo adaptado del anterior enlace externo,  Enlace externo,  Referencias,  Referencias,  c. Probabilidad de un suceso,  a. Axiomas,  b. Suceso y tipos de sucesos,  Resumen,  PROBABILIDAD">
+  <meta NAME = "DESCRIPTION"        CONTENT = "Este Cmap, tiene información relacionada con: Probabilidad, Enlace externo Ejemplo Dado una heladería que tiene una promoción de un cono de helado sorpresa en el que puede ser de 1 sabor aleatorio, nuestro espacio muestral son los siguientes sabores: H = {vainilla, chocolate, fresa, ron pasas, arequipe} Un suceso seguro seria aquel en que toque alguno de los 5 sabores anteriores. Un suceso imposible seria que tocara el sabor mango. En el caso de sacar el helado de chocolate, el suceso contrario seria sacar cualquiera de los otros 4 sabores Ejemplo adaptado del anterior enlace externo, PROBABILIDAD ¿Cómo asignar el valor de probabilidad a un evento c. Probabilidad de un suceso, PROBABILIDAD ¿Cuáles son los objetos de estudio de la Probabilidad? b. Suceso y tipos de sucesos, ¿Cuales son los principios de la Probabilidad? AXIOMA 1: Si A es un evento de S, entonces la probabilidad del evento A es: 0 ≤ P(A) ≤ 1 AXIOMA 2: Si dos eventos son mutuamente excluyentes, la probabilidad de obtener A o B es igual a la probabilidad de obtener A más la probabilidad de obtener B: P(A∪B) = P(A) + P(B) AXIOMA 3: Si A es un evento cualquiera de un experimento aleatorio y A' es el complemento de A, entonces: P(A') = 1 - P(A) Referencias, d. Leyes de las probabilidades ¿Dónde encuentro un resumen de estas leyes? Resumen, a. Axiomas Un axioma es el sistema básico de un sistema de lógica y junto a reglas de inferencia definen un sistema deductivo ¿Cuales son los principios de la Probabilidad?, PROBABILIDAD ¿La Probabilidad es un sistema axiomático? a. Axiomas, PROBABILIDAD ¿Qué reglas se establecen para el manejo de las probabilidades? d. Leyes de las probabilidades, c. Probabilidad de un suceso La probabilidad del evento es la probabilidad de que ocurra un resultado o evento específico. Esto se calcula dividiendo las veces que ocurre el evento entre todos los eventos posibles, como el evento de que salga una carta roja en un mazo de 52 cartas: de las 52 cartas que son el total de eventos, 26 son rojas asi que P(R) = 26/52 = 1/2 = 0.5 = 50% ¿Cómo construir ejemplos de espacios muestrales?, ¿Cómo construir ejemplos de espacios muestrales? La probabilidad de un evento A es la suma de los pesos de todos los puntos muestrales en A. Por lo tanto: Se lanza una moneda tres veces. ¿Cuál es la probabilidad de que ocurra al menos dos caras? Nuestro espacio muestral sería el siguiente: M = {CCC, CCS, CSC, CSS, SCC, SCS, SSC, SSS} Los eventos en los que salgan 2 caras son: P(C) = {CCC, CCS, CSC, SCC} = 1/8+1/8+1/8+1/8 P(C) = 4/8 = 1/2 = 0.5 = 50% Ejemplo adaptado de: Referencias, b. Suceso y tipos de sucesos ¿Dónde encuentro ejemplos de este tema? Enlace externo">
+  <meta NAME = "AUTHOR"             CONTENT = "IHMC CmapTools">
+  <meta HTTP-EQUIV = "Content-Type" CONTENT = "text/html; charset = UTF-8">
+  <script LANGUAGE="JavaScript1.2">
+  <!--
+    //  PopUp --
+    //  Institute for Human and Machine Cognition, http://www.ihmc.us/
+    //  CmapTools, Version 4.11, http://cmap.ihmc.us/
+    //  Modify by: CmapTools Developers, cmapsupport@ihmc.us
+    //  Date: 12/14/2006
+
+    var IE = 0;
+    var IE4PC = 0;
+    var NS = 0;
+    var GECKO = 0;
+
+    var openpopups = new Array();
+
+    if (document.all) {                 // Internet Explorer Detected
+	   IE = true;	
+    }
+    else if (document.layers) {         // Netscape Navigator Detected
+	   NS = true;	
+    }
+    else if (document.getElementById) { // Netscape 6 Detected
+       GECKO = true;
+    }
+    else {
+	   alert("Unrecognized Browser Detected::\nSorry, your browser is not compatible.");
+    }
+
+    if (IE)
+    {
+	   OS = navigator.platform;
+	   VER = new String(navigator.appVersion);
+	   VER = VER.substr (0, VER.indexOf(" "));
+	   if ((VER < 4.8) && (OS == "Win32")) 
+	   {
+	       IE4PC = 1;
+	   }
+    }
+
+    function handleResize() {
+	    location.reload();
+	    return false;
+    }
+
+
+    if ((NS) && (navigator.platform == "MacPPC")) {
+	   window.captureEvents (Event.RESIZE);
+	   window.onresize = handleResize;
+    }
+
+    function openResource(event, resourcePath, resourceName, resourceType)
+    {
+	   var newwindow;
+
+       // Resource MIMETypes are enumerated as follows: 
+       // cMap     = Undefined
+       // Image    = 0
+       // Video    = 1
+       // Text     = 2
+       // Audio    = 3
+
+       popDown();
+
+	   switch (resourceType) 
+	   {
+	    case 0:     //Image
+                    newwindow = window.open (resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+                    var text ='<center><img src=\"';
+                    text += resourcePath;
+                    text +='\"> </center>';
+             break;
+		
+	    case 1:  text   // Video
+		     newwindow = window.open (resourcePath,resourceName);
+                     newwindow.onBlur = newwindow.focus()
+                     var text ='<embed src=\"';
+                     text += resourcePath;
+                     text +='\" autostart=true> </embed> ';
+             break;
+
+	    case 2:      // Text or Unknown 
+		     newwindow = window.open(resourcePath,resourceName);
+                     newwindow.onBlur = newwindow.focus()
+              break;
+
+	    case 3:       // Audio
+                    newwindow = window.open (resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+                    var text ='<embed src=\"';
+                    text += resourcePath;
+                    text +='\" autoplay=true> </embed> ';
+             break;
+
+	    case 4:
+                    newwindow = window.open(resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+	     break;
+	    }
+        return;
+    }
+
+
+
+    function popUpEvt(event, popupName)
+    {
+	popDown();
+
+	if (GECKO)
+	{
+	    document.getElementById(popupName).style.left = event.layerX;
+	    document.getElementById(popupName).style.top = event.layerY;
+	    document.getElementById(popupName).style.background = "#B3B3B3";
+	    document.getElementById(popupName).style.visibility = "visible";
+	    openpopups.push(popupName);
+	}
+	else if (NS) 
+	{
+	    document.layers[popupName].moveTo (event.pageX, event.pageY);
+	    document.layers[popupName].bgColor = "#B3B3B3";
+	    document.layers[popupName].visibility = "show";
+	    openpopups.push(popupName);
+	}
+	else // if (IE)
+	{
+	    window.event.cancelBubble = true;
+	    if (!IE4PC) {
+		document.all[popupName].style.backgroundColor = "#B3B3B3";
+	    }	
+	    document.all[popupName].style.left = window.event.clientX + document.body.scrollLeft;
+	    document.all[popupName].style.top = window.event.clientY + document.body.scrollTop;
+	    document.all[popupName].style.visibility = "visible";
+	    openpopups[openpopups.length] = popupName;
+	}
+	return false;
+    }
+
+    function popDown()
+    {
+	var popupname;
+	
+	for (var i = 0; i < openpopups.length; i++) 
+	{
+	    popupname = new String (openpopups[i]);      
+	    if (GECKO) {
+		document.getElementById(popupname).style.visibility = "hidden";
+	    }
+	    else if (NS) {
+		document.layers[popupname].visibility = "hide";
+	    }
+	    else {
+		document.all[popupname].style.visibility = "hidden";
+	    }
+	}
+	openpopups = new Array();
+	return;
+    }
+
+    function popDownNoGecko() 
+    {
+	var popupname;
+	for (var i = 0; i < openpopups.length; i++) 
+	{
+	    popupname = new String (openpopups[i]);      
+	    if (GECKO) {
+           //  document.getElementById(popupname).style.visibility = "hidden"; 
+	        return;   // erased for test purposes
+	    }  
+	    else if (NS) {
+	        document.layers[popupname].visibility = "hide";
+	    }
+	    else {
+	        document.all[popupname].style.visibility = "hidden";
+	    }
+	}
+	openpopups = new Array();
+        return;
+    }
+  //-->
+  </script>
+  <style type="text/css">
+    li {
+      list-style: none;
+      padding: 0 15;
+      display: inline-block;
+      height: 100%
+    }
+    li > p {
+      margin-top: 25px;
+      font-family: sans-serif;
+      font-size: 20px;
+    }
+    li:hover {
+      background-color: white;
+      color: black;
+    }
+    ul {
+      color: white;
+      margin: 0;
+      padding: 0;
+      height: 100%
+    }
+  </style>
+</HEAD>
+<BODY bgcolor="#FFFFFF" leftmargin="0" topmargin="0">
+<div style="width: 100%">
+  <div style="width: 100%; background-color: black; height: 60px; position: absolute;">
+    <div style="background-color: black; float: right; border-bottom-left-radius: 15px">
+      <img src="preloader.png" height="180px" style="padding: 10px">
+    </div>
+    <center><ul>
+      <a href="#"><li><p>Probabilidad</p></li></a>
+      <a href="Teorias de probabilidad.html"><li><p>Teorias de probabilidad</p></li></a>
+    </ul></center>
+  </div>
+  <div style="padding-top: 130px">
+    <noscript>
+  <table width=90% cellpadding=10>
+    <tr>
+      <td bgcolor=ff4447>
+        <font color=000000 size=+1 face="helvetica">
+        <h1>WARNING:</h1>
+        <b>JavaScript is turned OFF.  None of the links on this concept map will <br>
+           work until it is reactivated.
+          <p>
+            <a href="http://cmap.ihmc.us/docs/EnablingJavaScript.html">
+                            If you need help turning JavaScript On, click here.
+            </a>
+          </p>
+        </b>
+      </td>
+    </tr>
+  </table>
+Este Cmap, tiene información relacionada con: Probabilidad, Enlace externo Ejemplo Dado una heladería que tiene una promoción de un cono de helado sorpresa en el que puede ser de 1 sabor aleatorio, nuestro espacio muestral son los siguientes sabores: H = {vainilla, chocolate, fresa, ron pasas, arequipe} Un suceso seguro seria aquel en que toque alguno de los 5 sabores anteriores. Un suceso imposible seria que tocara el sabor mango. En el caso de sacar el helado de chocolate, el suceso contrario seria sacar cualquiera de los otros 4 sabores Ejemplo adaptado del anterior enlace externo, PROBABILIDAD ¿Cómo asignar el valor de probabilidad a un evento c. Probabilidad de un suceso, PROBABILIDAD ¿Cuáles son los objetos de estudio de la Probabilidad? b. Suceso y tipos de sucesos, ¿Cuales son los principios de la Probabilidad? AXIOMA 1: Si A es un evento de S, entonces la probabilidad del evento A es: 0 ≤ P(A) ≤ 1 AXIOMA 2: Si dos eventos son mutuamente excluyentes, la probabilidad de obtener A o B es igual a la probabilidad de obtener A más la probabilidad de obtener B: P(A∪B) = P(A) + P(B) AXIOMA 3: Si A es un evento cualquiera de un experimento aleatorio y A' es el complemento de A, entonces: P(A') = 1 - P(A) Referencias, d. Leyes de las probabilidades ¿Dónde encuentro un resumen de estas leyes? Resumen, a. Axiomas Un axioma es el sistema básico de un sistema de lógica y junto a reglas de inferencia definen un sistema deductivo ¿Cuales son los principios de la Probabilidad?, PROBABILIDAD ¿La Probabilidad es un sistema axiomático? a. Axiomas, PROBABILIDAD ¿Qué reglas se establecen para el manejo de las probabilidades? d. Leyes de las probabilidades, c. Probabilidad de un suceso La probabilidad del evento es la probabilidad de que ocurra un resultado o evento específico. Esto se calcula dividiendo las veces que ocurre el evento entre todos los eventos posibles, como el evento de que salga una carta roja en un mazo de 52 cartas: de las 52 cartas que son el total de eventos, 26 son rojas asi que P(R) = 26/52 = 1/2 = 0.5 = 50% ¿Cómo construir ejemplos de espacios muestrales?, ¿Cómo construir ejemplos de espacios muestrales? La probabilidad de un evento A es la suma de los pesos de todos los puntos muestrales en A. Por lo tanto: Se lanza una moneda tres veces. ¿Cuál es la probabilidad de que ocurra al menos dos caras? Nuestro espacio muestral sería el siguiente: M = {CCC, CCS, CSC, CSS, SCC, SCS, SSC, SSS} Los eventos en los que salgan 2 caras son: P(C) = {CCC, CCS, CSC, SCC} = 1/8+1/8+1/8+1/8 P(C) = 4/8 = 1/2 = 0.5 = 50% Ejemplo adaptado de: Referencias, b. Suceso y tipos de sucesos ¿Dónde encuentro ejemplos de este tema? Enlace externo
+
+</noscript>
+
+<map name="Probabilidad.html">
+  <area shape="rect"
+        href="1XK1NNTVMI1QQ4VPMIKMKItextIhtml"
+        onClick="popUpEvt(event,'1XK1NNTVMI1QQ4VPMIKMKItextIhtml'); return false;"
+        coords="887,664,905,682">
+  <area shape="rect"
+        href="1XK1L5WCHIFY4TZZIB4HItextIhtml"
+        onClick="popUpEvt(event,'1XK1L5WCHIFY4TZZIB4HItextIhtml'); return false;"
+        coords="506,274,524,292">
+  <area shape="rect"
+        href="1XK1JQDZVIJHR2HLI4KBItextIhtml"
+        onClick="popUpEvt(event,'1XK1JQDZVIJHR2HLI4KBItextIhtml'); return false;"
+        coords="139,611,157,629">
+  <area shape="rect"
+        href="1XK1NNTVKIPWM5ZZIKMGItextIhtml"
+        onClick="popUpEvt(event,'1XK1NNTVKIPWM5ZZIKMGItextIhtml'); return false;"
+        coords="888,721,906,739">
+  <area shape="rect"
+        href="1XK1RGVDPI9WV692IQTFItextIhtml"
+        onClick="popUpEvt(event,'1XK1RGVDPI9WV692IQTFItextIhtml'); return false;"
+        coords="1257,286,1275,304">
+</map>
+
+<center>
+  <table width=* height=* cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td valign=center align=center>
+        <img USEMAP="#Probabilidad.html"
+             SRC="Probabilidad.jpg"
+             ALIGN=middle
+             BORDER=0
+             onClick=popDown();>
+      </td>
+    </tr>
+    <tr>
+      <td VALIGN=top ALIGN=right>
+        <table>
+          <tr>
+            <td ALIGN=right VALIGN=middle>
+              <map NAME="CmapToolsTrademark">
+                <area SHAPE="rect"
+                      href="http://cmap.ihmc.us/"
+                      onClick="openResource(event,'http://cmap.ihmc.us/', 0, 2); return false;"
+                      coords="1,1,210,50">
+              </map>
+            </td>
+          </tr>
+          <tr>
+            <td  ALIGN=right VALIGN=middle>
+            </td>
+            <td VALIGN=middle>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</center>
+  </div>
+</div>
+</BODY>
+</HTML>
+<div id="1XK1NNTVMI1QQ4VPMIKMKItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://i.ibb.co/T8BKxkj/moendas.png "TITLE="">
+      Construcción Espacio Muestral
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1XK1L5WCHIFY4TZZIB4HItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://ekuatio.com/apuntes-de-matematicas/estadistica-probabilidad/tipos-de-sucesos/ "TITLE="">
+      Ejemplos de sucesos
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1XK1JQDZVIJHR2HLI4KBItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://cidecame.uaeh.edu.mx/lcc/mapa/PROYECTO/libro19/21definicin_axiomas_y_teoremas.html "TITLE="">
+      Axiomas
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1XK1NNTVKIPWM5ZZIKMGItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://www.mat.uda.cl/hsalinas/cursos/2012/eyp1/clase4.pdf "TITLE="">
+      Probabilidad de un suceso
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1XK1RGVDPI9WV692IQTFItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://blogdefisicadevalentina.wordpress.com/estadistica/cuarto-periodo/leyes-de-la-probabilidad/ "TITLE="">
+      Leyes
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+
